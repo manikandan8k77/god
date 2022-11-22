@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>resume mani</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="resume.css">
+        <script src="https://kit.fontawesome.com/fc21010821.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/fc21010821.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="al">
+            <div class="header">
+       <header style="color: white; font-size: 25px;"><h1>Manikandan</h1></header>
+       <div class="m">
+       <i class="fas fa-bars baji j"></i>
+    </div>
+    </div>
+     
+        <div class="container">
+            <span class="text first-text">I'm a</span>
+            <span class="text sec-text">Freelancer</span> 
+        </div>
+
+        <div class="ul">
+        <ul class="class"; style="color: white;">
+            <li><a href="http://127.0.0.1:5501/resume.html">Home</a></li>
+            <li><a href="http://127.0.0.1:5501/resume2.html">About</a></li>
+            <li><a href="http://127.0.0.1:5501/resume3.html">Education</a></li>
+            <li><a href="http://127.0.0.1:5501/resume4.html">Skill</a></li>
+            <li><a href="http://127.0.0.1:5501/resume5.html">Contact</a></li><br>
+        </ul><br>
+    </div>   
+</div>
+     
+    </body>
+    <script>
+        const text = document.querySelector(".sec-text");
+
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "Freelancer";
+            }, 0); 
+            setTimeout(() => {
+                text.textContent = "Blogger";
+            }, 4000);
+            setTimeout(() => {
+                text.textContent = "YouTuber";
+            }, 8000); //1s = 1000 milliseconds
+        }
+
+        textLoad();
+        setInterval(textLoad, 12000);
+    </script>    
+</html>
